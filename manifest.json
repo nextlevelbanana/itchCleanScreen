@@ -1,0 +1,18 @@
+{
+    "manifest_version": 2,
+    "name": "ItchCleanScreen",
+    "version": "1.0.0",
+  
+    "description": "hide the overlay on itch pages",
+  
+    "icons": {
+      "48": "itchcleanscreen.png"
+    },
+    "permissions": ["storage"],
+    "content_scripts": [
+      {
+        "matches": ["*://*.itch.io/*"],
+        "js": ["content.js"]
+      }
+    ]
+  }

@@ -1,0 +1,1 @@
+document.querySelector("#user_tools").style.display = "none";
